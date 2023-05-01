@@ -1,0 +1,179 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  min-height: 100vh;
+  background: linear-gradient(80deg, white, black);
+  overflow: hidden;
+}
+
+#Gradient1 {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    80deg,
+    rgb(5, 124, 172),
+    rgb(43, 247, 202, 0.5)
+  );
+  filter: blur(80px);
+  animation: down 20s infinite;
+}
+
+#Gradient2 {
+  position: absolute;
+  right: 0%;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    80deg,
+    rgba(245, 207, 82, 0.8),
+    rgba(199, 10, 114)
+  );
+  filter: blur(60px);
+  animation: left 20s infinite;
+}
+
+#Gradient3 {
+  position: absolute;
+  bottom: 0%;
+  right: 30%;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    80deg,
+    rgba(245, 207, 82, 0.8),
+    rgb(72, 187, 43)
+  );
+  filter: blur(40px);
+
+  animation: up 20s infinite;
+}
+
+#Gradient4 {
+    position: absolute;
+    bottom: 0%;
+    right: 30%;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      80deg,
+      rgba(245, 207, 82, 0.8),
+      rgb(72, 187, 43)
+    );
+    filter: blur(40px);
+  
+    animation: right 20s infinite;
+  }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  backdrop-filter: blur(5px);
+  padding: 20px 30px;
+  color: #fff;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+  padding: 10px 20px;
+  margin: 0 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  transition: all easi-in 0.4s;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+.nav-list li {
+  margin: 0 20px;
+  font-size: 15px;
+  cursor: pointer;
+  align-items: center;
+}
+.nav-list button {
+  padding: 10px 20px;
+  margin: 0 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  transition: all easi-in 0.4s;
+  cursor: pointer;
+}
+.nav-list button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  min-height: 80vh;
+  z-index: 999;
+  text-align: end;
+  color: azure;
+}
+
+#details h1{
+    font-size: 20px;
+    text-align: end;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes down {
+  0%,
+  100% {
+    top: -100%;
+  }
+
+  70% {
+    top: 700px;
+  }
+}
+
+@keyframes up {
+  0%,
+  100% {
+    bottom: -100%;
+  }
+
+  70% {
+    bottom: 700px;
+  }
+}
+
+@keyframes left {
+  0%,
+  100% {
+    left: -100%;
+  }
+
+  70% {
+    left: 700px;
+  }
+}
+
+@keyframes left {
+    0%,
+    100% {
+      right: -100%;
+    }
+  
+    70% {
+      right: 700px;
+    }
+  }
