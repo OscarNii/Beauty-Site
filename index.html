@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
     <title>Beautiful Site</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="Gradient1"></section>
     <section id="Gradient2"></section>
     <section id="Gradient3"></section>
@@ -18,28 +20,42 @@
     <section id="Gradient5"></section>
 
     <nav>
-        <div class="logo">
-            <h1>Logo.</h1>
-        </div>
-        <ul class="nav-list">
-            <li>About</li>
-            <li>Store</li>
-            <li>Store</li>
-            <li>Store</li>
-            <button>Create An Account</button>
-        </ul>
+      <div class="logo">
+        <h1>Logo.</h1>
+      </div>
+      <ul class="nav-list">
+        <li>About</li>
+        <li>Store</li>
+        <li>Store</li>
+        <li>Store</li>
+        <button>Create An Account</button>
+      </ul>
     </nav>
 
-    <section id="details">
-        <small>Creating Boundless possibile Illustion</small>
-        <h1>Building Beautiful Apps within the domain</h1>
-    </section>
-    <div class="glassCard">
-        <div class="card"></div>
-        <div class="elements bg"></div>
-        <div class="elements imgB"></div>
-        
+    <div class="box">
+      <div class="elements bg"></div>
+      <div class="elements imgBx"></div>
+      <div class="card"></div>
     </div>
-</body>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+      integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      VanillaTilt.init(document.querySelector(".box"), {
+        max: 55,
+        speed: 200,
+        glare: true,
+      });
+    </script>
+
+    <section id="details">
+      <small>Creating Boundless possibile Illustion</small>
+      <h1>Building Beautiful Apps within the domain</h1>
+    </section>
+  </body>
 </html>

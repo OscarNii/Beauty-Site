@@ -127,40 +127,54 @@ nav {
 }
 
 .box {
-  position: relative;
-  border-radius: 20px;
-  transform-style: preserve-3d;
-  left: 150px;
-  top: 60px;
-}
-.box .card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  width: 300px;
-  min-height: 400px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.75);
-  border-left: 1px rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 25px 45px rgb(95, 1, 95);
-  transform-style: preserve-3d;
-}
-.elements {
-  position: absolute;
-  top: 90px;
-  left: -30px;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.052);
-  transform: translateZ(80px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.75);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 25px 45px rgb(0, 0, 0, 0.5);
-}
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    left: 150px;
+    top: 60px;
+  }
+  .box .card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgb;
+    transform-style: preserve-3d;
+  }
+  .elements {
+    position: absolute;
+    top: 90px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.052);
+    transform: translateZ(80px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgb(0,0,0,0.5);
+  }
+
+  .elements .bg ::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .box:hover .elements.bg::before {
+    opacity: 1;
+  }
+  
+
 
 @keyframes down {
   0%,
